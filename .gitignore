@@ -51,3 +51,17 @@ htmlcov/
 .pytest_cache/
 
 uv.lock
+
+# ---------------------------------------------------------------
+# Sensitive / machine-specific — never commit these
+# ---------------------------------------------------------------
+
+# Claude Desktop config contains FPL password and local paths
+claude_desktop_config.json
+
+# FPL credentials file created by fpl-mcp-config
+.fpl-mcp/
+credentials.json
+
+# Disk cache built up at runtime (can be large, machine-specific)
+.cache/fpl-mcp/
